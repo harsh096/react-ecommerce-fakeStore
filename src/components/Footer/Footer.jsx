@@ -51,6 +51,17 @@ const Footer = () => {
           </p>
         </div>
       </div>
+      <hr />
+      <div className="footer-right-container-mobile">
+        <h3 className="footer-right-heading-mobile">Buy Hassle Free</h3>
+        <p className="footer-right-original">
+          100% ORIGINAL guarantee for all products.
+        </p>
+        <p className="footer-right-return">
+          Return within 30 days of receiving your order
+        </p>
+      </div>
+      <hr />
       <p className="footer-rights-reserved">
         © {currentYear} www.estore.com. All rights reserved.
       </p>

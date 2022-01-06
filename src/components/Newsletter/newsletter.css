@@ -2,6 +2,7 @@
   background-color: rgb(39, 39, 39);
   padding: 10px;
   height: 200px;
+  width: 100vw;
 }
 
 .newsletter-heading {
@@ -77,4 +78,42 @@
 
 .subscribe-email {
   font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  .newsletter-container {
+    padding: 0;
+  }
+
+  .newsletter-heading {
+    display: inline-block;
+    font-size: 22px;
+    margin: 10px;
+  }
+
+  .newsletter-text {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .newsletter-input-box {
+    height: 30px;
+    width: 300px;
+  }
+
+  .newsletter-input {
+    font-size: 18px;
+    width: 80%;
+  }
+
+  .newsletter-button {
+    height: 30px;
+    font-size: 18px;
+  }
+
+  .email-subscribed-text {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 300;
+  }
 }

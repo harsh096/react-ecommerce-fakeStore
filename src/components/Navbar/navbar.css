@@ -80,3 +80,13 @@
   margin: 0 5px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  .navbar-left-menu {
+    display: none;
+  }
+
+  .navbar-search-container {
+    display: none;
+  }
+}

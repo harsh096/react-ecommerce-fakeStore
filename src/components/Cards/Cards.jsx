@@ -43,28 +43,11 @@ function Cards({ heading, category }) {
     getProducts();
   }, [category]);
 
-  // const categoryUpperCase =
-  //   category.charAt(0).toUpperCase() + category.slice(1);
-  // console.log(category);
-
-  // switch (category) {
-  //   case "men's%20clothing":
-  //     category = "Men Wear";
-  //     break;
-
-  //   case "women's%20clothing":
-  //     category = "Women Wear";
-  //     break;
-
-  //   default:
-  //     category = category;
-  // }
-
   return (
     <div className="cards-container">
       <h3 className="card-heading">
         {category === "men's%20clothing"
-          ? "Men Wear"
+          ? "Mens Wear"
           : category === "women's%20clothing"
           ? "Women Wear"
           : category.charAt(0).toUpperCase() + category.slice(1)}
