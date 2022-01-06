@@ -34,7 +34,7 @@ function Cards({ heading, category }) {
         const res = await axios.get(
           `https://fakestoreapi.com/products/category/${category}?limit=4`
         );
-        console.log(res.data);
+        // console.log(res.data);
         setProducts(res.data);
       } catch (err) {
         console.log(err);

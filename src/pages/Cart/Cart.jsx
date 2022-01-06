@@ -19,7 +19,7 @@ function CartItem({ image, title, price }) {
 }
 
 function Cart() {
-  const { total, cartProducts } = useSelector((state) => state);
+  const { total, cartProducts, quantity } = useSelector((state) => state);
 
   return (
     <>
@@ -27,18 +27,22 @@ function Cart() {
       <div className="cart-container">
         <div className="cart-products-container">
           <div className="cart-products-wrapper">
-            {cartProducts.map((cartProduct) => {
-              return (
-                <>
-                  <CartItem
-                    image={cartProduct.imageUrl}
-                    title={cartProduct.title}
-                    price={cartProduct.price}
-                  />
-                  <hr />
-                </>
-              );
-            })}
+            {quantity !== 0 ? (
+              cartProducts.map((cartProduct) => {
+                return (
+                  <>
+                    <CartItem
+                      image={cartProduct.imageUrl}
+                      title={cartProduct.title}
+                      price={cartProduct.price}
+                    />
+                    <hr />
+                  </>
+                );
+              })
+            ) : (
+              <h3 className="cart-emptycart">Cart is empty..</h3>
+            )}
           </div>
         </div>
         <div className="cart-summary-container">
@@ -63,7 +67,11 @@ function Cart() {
           </div>
           <hr />
           <button
-            className="cart-checkout-button"
+            className={
+              quantity
+                ? "cart-checkout-button"
+                : "cart-checkout-button disabled"
+            }
             onClick={() => alert("Functionality coming soon...")}
           >
             Proceed to Pay

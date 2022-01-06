@@ -97,6 +97,15 @@
   transform: translateY(1.2px);
 }
 
+.cart-emptycart {
+  font-size: 30px;
+  text-align: center;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
 @media only screen and (max-width: 600px) {
   .cart-container {
     min-height: 80vh;
@@ -112,5 +121,6 @@
   }
 
   .cart-summary-item-sm {
+    font-size: 20px;
   }
 }

@@ -3,6 +3,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   let currentYear = new Date().getFullYear();
@@ -15,10 +16,18 @@ const Footer = () => {
             <div className="footer-left-left-item-container">
               <h3 className="footer-left-heading">Online Shopping</h3>
               <div className="footer-left-items">
-                <div className="footer-left-item">Electronics</div>
-                <div className="footer-left-item">Jewelery</div>
-                <div className="footer-left-item">Men's Clothing</div>
-                <div className="footer-left-item">Women's Clothing</div>
+                <Link to="/product/electronics" className="link">
+                  <div className="footer-left-item">Electronics</div>
+                </Link>
+                <Link to="/product/jewelery" className="link">
+                  <div className="footer-left-item">Jewelery</div>
+                </Link>
+                <Link to="/product/men" className="link">
+                  <div className="footer-left-item">Men's Clothing</div>
+                </Link>
+                <Link to="/product/women" className="link">
+                  <div className="footer-left-item">Women's Clothing</div>
+                </Link>
               </div>
             </div>
             <div className="footer-left-right-item-container">
