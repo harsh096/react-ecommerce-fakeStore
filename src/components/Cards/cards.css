@@ -1,0 +1,19 @@
+.cards-container {
+  padding: 10px;
+}
+
+.cards-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+.card-heading {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}

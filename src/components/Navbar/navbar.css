@@ -1,0 +1,82 @@
+.navbar-container {
+  background-color: white;
+  padding-top: 5px;
+  height: 65px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 1px 4px 16px -5px rgba(0, 0, 0, 0.59);
+  -webkit-box-shadow: 1px 4px 16px -5px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 1px 4px 16px -5px rgba(0, 0, 0, 0.59);
+}
+
+.navbar-wrapper {
+  height: 100%;
+  background-color: white;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left-menu {
+  display: flex;
+}
+
+.navbar-right-menu {
+  display: flex;
+}
+
+.navbar-logo-item {
+  font-size: 32px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navbar-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.navbar-search-container {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  border: 1px solid gray;
+  outline: none;
+  width: 15%;
+  border-radius: 5px;
+  padding: 4px 5px;
+  font-size: 16px;
+}
+
+.navbar-search-input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 80%;
+}
+
+.navbar-search-icon {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.navbar-right-menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-right-menu-icons {
+  cursor: pointer;
+}
+
+.navbar-right-menu-item {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 5px;
+  cursor: pointer;
+}

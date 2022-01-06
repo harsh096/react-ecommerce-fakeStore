@@ -1,0 +1,19 @@
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 10px 30px;
+  gap: 20px;
+}
+
+.product-category-heading {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 20px 10px;
+}
+
+.product-loading-container {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
