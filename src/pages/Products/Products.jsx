@@ -10,7 +10,7 @@ function Products() {
   let { category } = useParams();
   const categoryUpperCase =
     category.charAt(0).toUpperCase() + category.slice(1);
-  console.log(category);
+  // console.log(category);
   const [products, setProducts] = useState([]);
   const [productDetailsFetched, setProductDetailsFetched] = useState(false);
 
