@@ -61,6 +61,7 @@ function Cart() {
             <p className="cart-summary-item-lg">Total</p>
             <p className="cart-summary-item-sm">${total}</p>
           </div>
+          <hr />
           <button
             className="cart-checkout-button"
             onClick={() => alert("Functionality coming soon...")}

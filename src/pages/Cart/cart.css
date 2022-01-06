@@ -96,3 +96,21 @@
 .cart-checkout-button:active {
   transform: translateY(1.2px);
 }
+
+@media only screen and (max-width: 600px) {
+  .cart-container {
+    min-height: 80vh;
+    flex-direction: column;
+  }
+
+  .cart-summary-heading {
+    font-size: 24px;
+  }
+
+  .cart-summary-item-lg {
+    font-size: 20px;
+  }
+
+  .cart-summary-item-sm {
+  }
+}
