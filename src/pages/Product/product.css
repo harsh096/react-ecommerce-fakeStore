@@ -49,7 +49,7 @@
   font-size: 1em;
   font-weight: 400;
   margin-bottom: 20px;
-  max-height: 200px;
+  max-height: fit-content;
 }
 
 .product-price {

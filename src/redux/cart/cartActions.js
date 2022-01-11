@@ -1,4 +1,4 @@
-import { ADD_TO_CART } from "./cartTypes";
+import { ADD_TO_CART, EMPTY_CART } from "./cartTypes";
 
 export const addToCart = (product) => {
   return {
@@ -6,5 +6,11 @@ export const addToCart = (product) => {
     payload: {
       product: product,
     },
+  };
+};
+
+export const emptyCart = () => {
+  return {
+    type: EMPTY_CART,
   };
 };

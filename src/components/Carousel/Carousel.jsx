@@ -18,10 +18,10 @@ const sliderImages = [
     id: 4,
     path: "/images/slider4.jpg",
   },
-  {
-    id: 5,
-    path: "/images/slider5.jpg",
-  },
+  // {
+  //   id: 5,
+  //   path: "/images/slider5.jpg",
+  // },
 ];
 
 const Carousel = () => {

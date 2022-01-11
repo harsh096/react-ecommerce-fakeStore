@@ -17,3 +17,9 @@
   align-items: center;
   justify-content: center;
 }
+
+@media only screen and (max-width: 600px) {
+  .products-container {
+    justify-content: center;
+  }
+}

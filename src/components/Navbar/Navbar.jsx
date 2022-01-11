@@ -2,7 +2,7 @@ import "./navbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import MenuIcon from "@mui/icons-material/Menu";
 import Badge from "@mui/material/Badge";
 import { Link } from "react-router-dom";
@@ -103,9 +103,9 @@ const Navbar = () => {
           <Link to="/cart/1" className="link">
             <div className="navbar-right-menu-item">
               <Badge badgeContent={quantity} color="primary">
-                <ShoppingBagOutlinedIcon className="navbar-right-menu-icons" />
+                <ShoppingCartIcon className="navbar-right-menu-icons" />
               </Badge>
-              <p className="navbar-right-menu-item">Bag</p>
+              <p className="navbar-right-menu-item">Cart</p>
             </div>
           </Link>
         </div>

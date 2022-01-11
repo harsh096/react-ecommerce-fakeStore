@@ -2,7 +2,8 @@ import "./cart.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { useSelector, useDispatch } from "react-redux";
-import { addToCart } from "../../redux/cart/cartActions";
+import { emptyCart } from "../../redux/cart/cartActions";
+import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 
 function CartItem({ image, title, price }) {
   return (
@@ -20,7 +21,12 @@ function CartItem({ image, title, price }) {
 
 function Cart() {
   const { total, cartProducts, quantity } = useSelector((state) => state);
+  const dispatch = useDispatch();
 
+  const handleEmptyClick = () => {
+    dispatch(emptyCart());
+    console.log("empty");
+  };
   return (
     <>
       <Navbar />
@@ -43,6 +49,15 @@ function Cart() {
             ) : (
               <h3 className="cart-emptycart">Cart is empty..</h3>
             )}
+            {quantity ? (
+              <div
+                className="empty-cart-container"
+                onClick={() => handleEmptyClick()}
+              >
+                <DeleteOutlineIcon />
+                <p className="empty-cart-text">Empty Cart</p>
+              </div>
+            ) : null}
           </div>
         </div>
         <div className="cart-summary-container">
