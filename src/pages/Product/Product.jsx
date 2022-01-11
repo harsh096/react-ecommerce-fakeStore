@@ -33,10 +33,12 @@ function Product() {
 
   const handleAddToCartClick = () => {
     const dispatchProduct = {
+      id: product.id,
       imageUrl: product.image,
       title: product.title,
       price: product.price,
     };
+
     dispatch(addToCart(dispatchProduct));
   };
 
